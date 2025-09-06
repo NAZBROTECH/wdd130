@@ -1,39 +1,73 @@
-/* Limit the width of the main content */
-main {
-  max-width: 840px;
+/* ------------------------------
+   Navigation
+------------------------------- */
+nav {
+  background-color: #333;   /* dark background */
+  padding: 1rem;            /* space inside nav */
 }
 
-/* Style the aside element */
+nav a {
+  color: white;             /* link text color */
+  padding: 0.5rem 1rem;     /* spacing around links */
+  display: block;           /* each link on its own line */
+  text-decoration: none;    /* remove underline */
+}
+
+/* ------------------------------
+   Headings
+------------------------------- */
+h1 {
+  color: darkblue;          /* main heading color */
+}
+
+/* ------------------------------
+   Images
+------------------------------- */
+img {
+  width: 200px;             /* default image width */
+  height: auto;             /* keep aspect ratio */
+  border: 1px solid #ccc;   /* light border */
+  padding: 5px;             /* space inside border */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* subtle shadow */
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+main img {
+  width: 150px;             /* profile image inside main */
+  height: auto;
+}
+
+/* ------------------------------
+   Layout
+------------------------------- */
+main {
+  max-width: 840px;         /* limit main content width */
+}
+
 aside {
   width: 20rem;
   margin: 1rem;
-  border: 1px solid rgb(0 0 0 / 0.2); /* 1️⃣ subtle transparent border */
+  border: 1px solid rgb(0 0 0 / 0.2);
   padding: 1rem;
   background-color: #eee;
   color: #333;
   text-align: center;
 }
 
-/* Image inside aside */
-aside img {
-  width: 200px;
-  height: auto;
-}
-/* Keeping height auto preserves aspect ratio 
-   so the image is not distorted or pixelated. */
-
-/* Profile image inside main only */
-main img {
-  width: 150px;
-  height: auto;
-}
-
-/* Reset paragraph padding */
+/* ------------------------------
+   Text
+------------------------------- */
 p {
   padding: 0;
 }
 
-/* Footer styles */
+/* ------------------------------
+   Footer
+------------------------------- */
 footer {
   margin-top: 15px;
   border-top: 1px solid #000;
