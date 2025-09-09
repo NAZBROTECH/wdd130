@@ -1,43 +1,58 @@
+:root {
+  --primary-color: #004080;       /* main blue */
+  --secondary-color: #f06;        /* accent color */
+  --dark-color: #333;             /* dark gray */
+  --light-gray: #eee;             /* light gray background */
+  --border-gray: #ccc;            /* light border */
+  --black: #000;                  /* black */
+  --heading-font: 'Montserrat', Helvetica, sans-serif;
+  --body-font: Arial, sans-serif;
+  --main-padding: 1rem;
+  --link-padding: 0.5rem 1rem;
+  --image-width: 200px;
+}
+
 /* ------------------------------
    Navigation
 ------------------------------- */
 nav {
-  background-color: #333;   /* dark background */
-  padding: 1rem;            /* space inside nav */
+  background-color: var(--dark-color);
+  padding: var(--main-padding);
 }
 
 nav a {
-  color: white;             /* link text color */
-  padding: 0.5rem 1rem;     /* spacing around links */
-  display: block;           /* each link on its own line */
-  text-decoration: none;    /* remove underline */
+  color: white;
+  padding: var(--link-padding);
+  display: block;
+  text-decoration: none;
 }
 
 /* ------------------------------
    Headings
 ------------------------------- */
 h1 {
-  color: darkblue;          /* main heading color */
+  color: var(--primary-color);
+  font-family: var(--heading-font);
 }
 
 /* ------------------------------
    Images
 ------------------------------- */
 img {
-  width: 200px;             /* default image width */
-  height: auto;             /* keep aspect ratio */
-  border: 1px solid #ccc;   /* light border */
-  padding: 5px;             /* space inside border */
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* subtle shadow */
+  width: var(--image-width);
+  height: auto;
+  border: 1px solid var(--border-gray);
+  padding: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
 
 aside img {
-  width: 200px;
+  width: var(--image-width);
   height: auto;
 }
 
 main img {
-  width: 150px;             /* profile image inside main */
+  width: 150px; /* profile image inside main */
   height: auto;
 }
 
@@ -45,16 +60,16 @@ main img {
    Layout
 ------------------------------- */
 main {
-  max-width: 840px;         /* limit main content width */
+  max-width: 840px;
 }
 
 aside {
   width: 20rem;
-  margin: 1rem;
+  margin: var(--main-padding);
   border: 1px solid rgb(0 0 0 / 0.2);
-  padding: 1rem;
-  background-color: #eee;
-  color: #333;
+  padding: var(--main-padding);
+  background-color: var(--light-gray);
+  color: var(--dark-color);
   text-align: center;
 }
 
@@ -63,6 +78,7 @@ aside {
 ------------------------------- */
 p {
   padding: 0;
+  font-family: var(--body-font);
 }
 
 /* ------------------------------
@@ -70,6 +86,7 @@ p {
 ------------------------------- */
 footer {
   margin-top: 15px;
-  border-top: 1px solid #000;
+  border-top: 1px solid var(--black);
   text-align: center;
+  font-family: var(--body-font);
 }
