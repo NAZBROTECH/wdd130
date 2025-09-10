@@ -199,3 +199,11 @@ footer p {
     max-height: 48px;
   }
 }
+
+
+.content-image {
+  width: 100%;
+  max-width: 300px;
+  margin: 16px 0;
+  display: block;
+}
