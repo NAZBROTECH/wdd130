@@ -72,7 +72,7 @@ header, .grid, footer {
 .grid {
   display: grid;
   grid-template-columns: 20rem 1fr; /* aside left, main right */
-  align-items: stetch;
+  align-items: stretch;
   gap: 1rem;
 }
 
