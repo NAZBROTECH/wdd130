@@ -8,7 +8,7 @@
   --primary-color: #055a05;     /* forest green */
   --secondary-color: #f4a261;   /* warm sand */
   --accent1-color: #264653;     /* dark slate */
-  --accent2-color: #e9c46a;     /* golden yellow */
+  --accent2-color: #ffeb8a;     /* lighter yellow for better contrast */
   --heading-font: "Times New Roman", Georgia, serif;
   --body-font: Arial, Helvetica, sans-serif;
 }
@@ -58,8 +58,8 @@ footer {
 
 /* ---------- Header ---------- */
 header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
   background: var(--primary-color);
   color: var(--accent2-color);
@@ -69,22 +69,15 @@ header {
 
 header img {
   max-height: 64px;
-  margin: 0 auto; /* centers logo */
 }
 
 nav ul {
   list-style: none;
-  display: flex;
-  margin: 0 40px 0 0; /* shift nav slightly left */
+  display: flex; /* ✅ nav uses flexbox */
+  justify-content: flex-end;
+  margin: 0;
   padding: 0;
-}
-
-nav li {
-  border-left: 1px solid #fff;
-}
-
-nav li:first-child {
-  border-left: none;
+  gap: 12px;
 }
 
 nav a {
@@ -120,7 +113,7 @@ nav a:hover {
   background: var(--accent1-color);
   color: #fff;
   font-size: 1.8rem;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .hero article {
@@ -128,7 +121,7 @@ nav a:hover {
   bottom: 20px;
   left: 2%;
   right: 2%;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.9);
   padding: 16px;
 }
 
@@ -176,6 +169,7 @@ nav a:hover {
   display: flex;
   justify-content: space-around;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
 .adventure-gallery figure {
@@ -195,20 +189,20 @@ nav a:hover {
 
 /* ---------- Footer ---------- */
 footer {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto;
   align-items: center;
 }
 
 footer p {
-  flex: 1;
-  text-align: center;
   margin: 0;
+  text-align: center;
 }
 
 footer .socialmedia {
   display: flex;
   gap: 12px;
+  justify-content: flex-end; /* ✅ aligned to right */
 }
 
 footer .socialmedia img {
