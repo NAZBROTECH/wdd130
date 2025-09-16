@@ -1,0 +1,103 @@
+/* General Page Styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f4f8, #d9e4ec);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 30px 20px 10px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #004070;
+}
+
+header .intro {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Form Container */
+form {
+  max-width: 650px;
+  margin: 20px auto;
+  padding: 25px 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Fieldset & Legend */
+fieldset {
+  border: 2px solid #005fa3;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+legend {
+  padding: 0 10px;
+  font-weight: bold;
+  color: #005fa3;
+  font-size: 1.1rem;
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+/* Inputs, Textarea, Select */
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #005fa3;
+  outline: none;
+}
+
+/* Submit Button */
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #005fa3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #004070;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin: 25px 0;
+  font-size: 0.9rem;
+  color: #777;
+}
