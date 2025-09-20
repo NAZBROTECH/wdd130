@@ -419,9 +419,11 @@ footer .socialmedia img {
   border-radius: 6px;
   padding: 2rem;
   margin: 2rem auto;
-  width: 840px;
+  max-width: 840px;
+  width: 95%;
   text-align: center;
 }
+
 
 .newsletter h2 {
   margin-bottom: 1rem;
@@ -464,8 +466,10 @@ footer .socialmedia img {
   border: 1px solid #ddd;
   border-radius: 6px;
   background: var(--accent2-color);
-  width: 840px;
+  max-width: 840px;
+  width: 95%;
 }
+
 
 .cta h2 {
   margin-bottom: 0.5rem;
