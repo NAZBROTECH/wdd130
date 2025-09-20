@@ -610,3 +610,10 @@ footer .socialmedia img {
 .trips-table tr:nth-child(even) {
   background: #f9f9f9;
 }
+
+
+.home-grid h2 {
+  grid-column: 1 / -1;   /* make the heading span all columns */
+  text-align: center;    /* center it nicely */
+  margin-bottom: 1rem;   /* add space below the heading */
+}
