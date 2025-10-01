@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://moonlit-gingersnap-f5170c.netlify.app/sitemap.xml
