@@ -656,3 +656,25 @@ nav ul li a.active {
     background-color: #ff6600; /* highlight current page */
     color: white;
 }
+
+
+
+
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* stack nav items vertically */
+        padding: 0;
+    }
+
+    .home-grid {
+        display: block; /* stack grid items */
+    }
+
+    .home-hero img {
+        width: 100%; /* image fits screen */
+        height: auto;
+    }
+}
