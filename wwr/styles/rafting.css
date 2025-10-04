@@ -617,3 +617,42 @@ footer .socialmedia img {
   text-align: center;    /* center it nicely */
   margin-bottom: 1rem;   /* add space below the heading */
 }
+
+
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #333;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ffcc99; /* light hover effect */
+    color: #333;
+}
+
+nav ul li a.active {
+    background-color: #ff6600; /* highlight current page */
+    color: white;
+}
+
+
+
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #333;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ffcc99; /* light hover effect */
+    color: #333;
+}
+
+nav ul li a.active {
+    background-color: #ff6600; /* highlight current page */
+    color: white;
+}
